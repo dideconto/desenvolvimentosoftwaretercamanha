@@ -1,0 +1,6 @@
+1 - Criar um arquivo com a extensão *.java
+2 - Criar um classe dentro do arquivo
+3 - O nome da classe obrigatoriamente deve ter o mesmo
+nome do arquivo
+4 - A primeira letra da palavra da classe com letra
+maiúscula
