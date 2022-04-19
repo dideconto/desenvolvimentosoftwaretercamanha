@@ -10,7 +10,6 @@ import utils.Console;
 public class Principal {
     public static void main(String[] args) {
         int opcao = 0;
-        Cliente cliente;
         Funcionario funcionario;
         Produto produto;
         ArrayList<Cliente> clientes = new ArrayList<Cliente>();
@@ -30,18 +29,12 @@ public class Principal {
 
             switch (opcao) {
                 case 1:
-                    cliente = new Cliente();
-                    System.out.println("\n -- CADASTRO DE CLIENTES -- \n");
-                    cliente.setNome(Console.readString("Digite o nome do cliente: "));
-                    cliente.setCpf(Console.readString("Digite o CPF do cliente: "));
-                    clientes.add(cliente);
-                    System.out.println("\nCliente cadastrado !!!");
+                    CadastrarCliente cadastrarCliente = new CadastrarCliente();
+                    cadastrarCliente.renderizar();
                     break;
                 case 2:
-                    System.out.println("\n -- LISTAGEM DE CLIENTES -- \n");
-                    for (Cliente clienteCadastrado : clientes) {
-                        System.out.println(clienteCadastrado);
-                    }
+                    ListarClientes listarClientes = new ListarClientes();
+                    listarClientes.renderizar();
                     break;
                 case 3:
                     funcionario = new Funcionario();
