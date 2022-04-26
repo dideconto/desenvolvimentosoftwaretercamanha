@@ -6,7 +6,7 @@ import models.Cliente;
 
 public class ClienteController {
 
-    private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+    private static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 
     public void cadastrar(Cliente cliente) {
         clientes.add(cliente);
