@@ -16,4 +16,13 @@ public class ClienteController {
         return clientes;
     }
 
+    public Cliente buscarPorCpf(String cpf){
+        for (Cliente clienteCadastrado : clientes) {
+            if(clienteCadastrado.getCpf().equals(cpf)){
+                return clienteCadastrado;
+            }
+        }
+        return null;
+    }
+
 }

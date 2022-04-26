@@ -1,10 +1,5 @@
 package views;
 
-import java.util.ArrayList;
-
-import models.Cliente;
-import models.Funcionario;
-import models.Produto;
 import utils.Console;
 
 public class Principal {
@@ -19,6 +14,8 @@ public class Principal {
             System.out.println("4 - Listar Funcionários");
             System.out.println("5 - Cadastrar Produto");
             System.out.println("6 - Listar Produtos");
+            System.out.println("7 - Cadastrar Venda");
+            System.out.println("8 - Listar Vendas");
             System.out.println("0 - Sair\n");
             opcao = Console.readInt("Digite uma opção: ");
 
@@ -47,6 +44,13 @@ public class Principal {
                     ListarProdutos listarProdutos = new ListarProdutos();
                     listarProdutos.renderizar();
                     break;
+                case 7:
+                    CadastrarVenda cadastrarVenda = new CadastrarVenda();
+                    cadastrarVenda.renderizar();
+                    break;
+                case 8:
+                    ListarVendas listarVendas = new ListarVendas();
+                    listarVendas.renderizar();
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
                     break;

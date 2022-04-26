@@ -15,5 +15,14 @@ public class ProdutoController {
     public ArrayList<Produto> listar() {
         return produtos;
     }
+
+    public Produto buscarPorNome(String nome){
+        for (Produto produtoCadastrado : produtos) {
+            if(produtoCadastrado.getNome().equals(nome)){
+                return produtoCadastrado;
+            }
+        }
+        return null;
+    }
     
 }
