@@ -51,6 +51,7 @@ public class Principal {
                 case 8:
                     ListarVendas listarVendas = new ListarVendas();
                     listarVendas.renderizar();
+                    break;
                 case 0:
                     System.out.println("\n -- SAINDO -- \n");
                     break;
