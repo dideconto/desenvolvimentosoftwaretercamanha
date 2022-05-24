@@ -8,14 +8,18 @@ public class ClienteController {
 
     private static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 
-    public void cadastrar(Cliente cliente) {
-        clientes.add(cliente);
-    }
+    //1 - Alterar o retorno do método
+    //2 - Percorrer a lista de registros
+    //3 - Perguntar se o CPF do cliente novo é igual ao cadastrado
 
-    public ArrayList<Cliente> listar() {
-        return clientes;
+    public boolean cadastrar(Cliente cliente) {
+        if(buscarPorCpf(cliente.getCpf()) == null){
+            clientes.add(cliente);
+            return true;
+        }
+        return false;                
     }
-
+    
     public Cliente buscarPorCpf(String cpf){
         for (Cliente clienteCadastrado : clientes) {
             if(clienteCadastrado.getCpf().equals(cpf)){
@@ -24,5 +28,10 @@ public class ClienteController {
         }
         return null;
     }
+    
+    public ArrayList<Cliente> listar() {
+        return clientes;
+    }
+
 
 }

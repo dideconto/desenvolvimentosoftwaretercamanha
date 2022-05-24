@@ -12,8 +12,12 @@ public class CadastrarCliente {
         System.out.println("\n -- CADASTRO DE CLIENTES -- \n");
         cliente.setNome(Console.readString("Digite o nome do cliente: "));
         cliente.setCpf(Console.readString("Digite o CPF do cliente: "));        
-        clienteController.cadastrar(cliente);
-        System.out.println("\nCliente cadastrado !!!");
+        
+        if(clienteController.cadastrar(cliente)){
+            System.out.println("\nCliente cadastrado!!!");
+        }else{
+            System.out.println("\nCliente já cadastrado!!!");
+        }
     }
     
 }
