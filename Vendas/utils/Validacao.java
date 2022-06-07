@@ -1,27 +1,6 @@
-public class Principal {
-    public static void main(String[] args) {
-        System.out.println("  --  VALIDAR CPF  -- ");
+package utils;
 
-        // Remover os pontos e traço. Procurar pelo método replace
-        // Invalidar o CPF quando: a quantidade de caracteres for diferente de 11
-        // Invalidar o CPF quando: todos os caracteres forem iguais
-        // Invalidar o CPF quando: houver letras
-
-        String cpfInvalido = "156.741.732-06";
-        String cpfValido = "053.634.199-04";
-
-        if (verificarCPF(cpfValido)) {
-            System.out.println("CPF Válido");
-        } else {
-            System.out.println("CPF Inválido");
-        }
-
-        if (verificarCPF(cpfInvalido)) {
-            System.out.println("CPF Válido");
-        } else {
-            System.out.println("CPF Inválido");
-        }
-    }
+public class Validacao {
 
     public static boolean verificarCPF(String cpf) {
         cpf = removerCaracteres(cpf);
@@ -96,4 +75,5 @@ public class Principal {
                 cpf.equals("88888888888") ||
                 cpf.equals("99999999999");
     }
+    
 }
