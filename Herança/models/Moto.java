@@ -2,6 +2,11 @@ package models;
 
 public class Moto extends Automovel{
 
+    public Moto(String placa){
+        super(placa);
+        System.out.println("Criamos um moto!");
+    }
+
     private String potencia;
 
     public String getPotencia() {
