@@ -16,5 +16,10 @@ public class Moto extends Automovel{
     public void setPotencia(String potencia) {
         this.potencia = potencia;
     }
+
+    @Override
+    public String paraTexto() {
+        return "É uma moto - PARA TEXTO";
+    }
     
 }

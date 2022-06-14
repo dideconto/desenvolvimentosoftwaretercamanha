@@ -17,4 +17,9 @@ public class Carro extends Automovel {
     public void setCombustivel(String combustivel) {
         this.combustivel = combustivel;
     }
+
+    @Override
+    public String paraTexto() {
+        return "É um carro - PARA TEXTO";
+    }
 }

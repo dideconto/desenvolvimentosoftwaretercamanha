@@ -54,4 +54,8 @@ public class Automovel {
     public void setCriadoEm(Date criadoEm) {
         this.criadoEm = criadoEm;
     }
+
+    public String paraTexto(){
+        return "Isso é um automóvel!";
+    }
 }
