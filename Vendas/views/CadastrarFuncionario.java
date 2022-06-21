@@ -4,9 +4,11 @@ import controllers.FuncionarioController;
 import models.Funcionario;
 import utils.Console;
 import utils.Validacao;
+import views.contracts.IViews;
 
-public class CadastrarFuncionario {
+public class CadastrarFuncionario implements IViews {
 
+    @Override
     public void renderizar() {
         Funcionario funcionario = new Funcionario();
         FuncionarioController funcionarioController = new FuncionarioController();

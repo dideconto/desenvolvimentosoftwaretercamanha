@@ -10,9 +10,11 @@ import models.ItemVenda;
 import models.Produto;
 import models.Venda;
 import utils.Console;
+import views.contracts.IViews;
 
-public class CadastrarVenda {
+public class CadastrarVenda implements IViews {
 
+    @Override
     public void renderizar() {
         Venda venda = new Venda();
 

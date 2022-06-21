@@ -1,13 +1,13 @@
 package views;
 
-import java.util.ArrayList;
-
 import controllers.VendaController;
 import models.ItemVenda;
 import models.Venda;
+import views.contracts.IViews;
 
-public class ListarVendas {
+public class ListarVendas implements IViews {
 
+    @Override
     public void renderizar(){
         VendaController vendaController = new VendaController();      
         System.out.println("\n -- LISTAGEM DE VENDAS -- \n");

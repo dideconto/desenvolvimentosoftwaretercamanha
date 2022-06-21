@@ -3,9 +3,11 @@ package views;
 import controllers.ProdutoController;
 import models.Produto;
 import utils.Console;
+import views.contracts.IViews;
 
-public class CadastrarProduto {
+public class CadastrarProduto implements IViews {
 
+    @Override
     public void renderizar() {
         Produto produto = new Produto();
         ProdutoController produtoController = new ProdutoController();

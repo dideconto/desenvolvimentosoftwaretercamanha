@@ -5,7 +5,7 @@ public class Carro extends Automovel {
     public Carro(String combustivel, String placa){
         super(placa);
         this.combustivel = combustivel;
-        System.out.println("Criamos um carro!");
+        // System.out.println("Criamos um carro!");
     }
 
     private String combustivel;

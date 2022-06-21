@@ -8,7 +8,7 @@ public class Automovel {
         // criadoEm = new Date();
         setCriadoEm(new Date());
         setPlaca(placa);
-        System.out.println("Criamos um automóvel");
+        // System.out.println("Criamos um automóvel");
     }
     
     private String placa;

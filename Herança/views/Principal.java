@@ -14,13 +14,13 @@ public class Principal{
         // carro.setModelo("Onix");
         // carro.setPlaca("AAA-1111");
         // carro.setVelocidadeMaxima(180);
-        System.out.println("Criado em: " + carro.getCriadoEm());
-        System.out.println("Placa: " + carro.getPlaca());
-        System.out.println("Combustível: " + carro.getCombustivel());
+        // System.out.println("Criado em: " + carro.getCriadoEm());
+        // System.out.println("Placa: " + carro.getPlaca());
+        // System.out.println("Combustível: " + carro.getCombustivel());
         System.out.println(carro.paraTexto());
 
-        Thread.sleep(2000);
-        System.out.println("");
+        // Thread.sleep(2000);
+        // System.out.println("");
         
         Moto moto = new Moto("BBB-2222");
         // moto.setPotencia("150cc");
@@ -29,15 +29,15 @@ public class Principal{
         // moto.setModelo("Onix");
         // moto.setPlaca("AAA-1111");
         // moto.setVelocidadeMaxima(180);
-        System.out.println("Criado em: " + moto.getCriadoEm());
-        System.out.println("Placa: " + moto.getPlaca());
+        // System.out.println("Criado em: " + moto.getCriadoEm());
+        // System.out.println("Placa: " + moto.getPlaca());
         System.out.println(moto.paraTexto());
         // System.out.println("Potência: " + moto.getPotencia());
 
-        System.out.println("");
+        // System.out.println("");
 
-        Caminhao caminhao = new Caminhao();
-        System.out.println(caminhao);
+        // Caminhao caminhao = new Caminhao();
+        // System.out.println(caminhao);
         
     }
 }

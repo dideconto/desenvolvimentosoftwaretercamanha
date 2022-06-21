@@ -4,9 +4,11 @@ import controllers.ClienteController;
 import models.Cliente;
 import utils.Console;
 import utils.Validacao;
+import views.contracts.IViews;
 
-public class CadastrarCliente {
+public class CadastrarCliente implements IViews {
 
+    @Override
     public void renderizar() {
         Cliente cliente = new Cliente();
         ClienteController clienteController = new ClienteController();
